@@ -1,0 +1,81 @@
+/* Fields */
+
+#music-add-form .field {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#music-add-form .field label {
+    display: block;
+    width: 100px;
+    line-height: 30px;
+}
+
+#music-add-form .field input,
+#music-add-form .field select {
+    width: 230px;
+    font-size: 19px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+
+/* Checkbox */
+
+#music-add-form .checkbox {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#music-add-form .checkbox label {
+    display: block;
+    line-height: 20px;
+}
+
+#music-add-form .checkbox input {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 100px;
+}
+
+
+/* Button */
+
+#music-add-form button {
+    font-size: 19px;
+    width: 120px;
+    height: 40px;
+    margin: 0 10px 0 100px;
+}
+
+
+/* Messages */
+
+#music-add-success,
+#music-add-failed {
+    display: none;
+    background-color: #fff;
+    border: solid 7px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+#music-add-success {
+    border-color: #0c0;
+    color: #0c0;
+}
+
+#music-add-failed {
+    border-color: #c00;
+    color: #c00;
+}
+
+#music-add-failed div {
+    color: #777;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+}

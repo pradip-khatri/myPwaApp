@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+header {
+    border-bottom: solid 5px #80CE17;
+}
+
+header .identity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+header .identity img {
+    width: 50px;
+    margin: 0 5px 0 0;
+}
+
+header .identity h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #64646E;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #64646E;
+    margin: 0 0 30px 0;
+    padding: 0;
+    border-bottom: dotted 1px #777;
+}
+
+
+/* Menu */
+
+header nav {
+    background-color: #80CE17;
+    display: flex;
+    padding: 5px 5px 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    display: block;
+    line-height: 40px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .75);
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+/* Main Content */
+
+main {
+    background-color: #e1e1e2;
+    flex: 1;
+    font-size: 20px;
+    position: relative;
+}
+
+main .content {
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+}
+
+.post-container {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+@media only screen and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+    }
+    header {
+        border-right: solid 7px #80CE17;
+        border-bottom: none;
+    }
+}
+
+#no-storage {
+    display: none;
+    color: #555;
+    background-color: #fff;
+    border: solid 7px #777;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 15px;
+}
